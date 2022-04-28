@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRAFTS</title>
+  <link rel="icon" href="images/imageedit_34_6571707878.jpg" />
+  <!-- css and js bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!--normalize file-->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!--css main file-->
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- font awsome library for icons-->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!--font awsowm-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@200;300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet" />
+  <!-- link css -->
+</head>
+<body>
+  <!-- Start Header -->
+  <nav>
+    <ul class="menu">
+      <a href="index.html" class="logo">
+        <img src="images/imageedit_34_6571707878.jpg"/>
+      </a>
+        <li class="item"><a class = "nav-item" href="index.html">Home</a></li>
+        <li class="item"><a class = "nav-item" href="index8.htm">Products</a></li>
+        <li class="item"><a class = "nav-item" href="">Contact</a></li>
+        <!-- <li class="item main"><a id="main-ico" href="#index2.html">Log In</a></li> -->
+        <li class="toggle"><span class="bars"></span></li>
+        <li class="item main"><a id="main-ico" href="index4.html"
+          ><span>log out</span></a></li>
+       <li class="item main"><a id="main-ico" href="index4.html">
+         <span id="profName">yasmeen</span>
+         <img id="profileImg" src="images/yasmeen.jpg" alt="" class="nav__user-img"/></a></li>
+
+      <li class="item">
+        <a href="index7.htm">
+          <i id="ico" class="bi bi-cart3"></i>
+          <span class="counter">0</span>
+        </a></li>
+    </ul>
+</nav>
+<!-- end header -->
+
+<!--start content -->
+ <main class="container-cart">
+     <h1 class="heading-txt">
+         <!-- <ion-icon name = "cart-outline"></ion-icon> -->
+         <i class="bi bi-cart3"></i></a></li>
+         Shopping cart
+     </h1>
+     <div class="item-flex">
+       <!-- checkout section -->
+         <!-- checkout -->
+         <div class="checkout">
+             <h2 class="section-heading">Payment Details</h2>
+             <div class="payment-form">
+               <!-- div methods -->
+                 <div class="payment-method">
+                     <button class="method selected" id="btnCredit" onclick="showCredit()">
+                        <i class="bi bi-credit-card-fill cart-icons"></i>
+                         <span>Credit Card</span>
+                         <i class="bi bi-check-circle-fill checkmark"></i>
+                     </button>
+                     <button class="method" id="btnAddress" onclick="showAddress()">
+                        <i class="bi bi-house-door-fill cart-icons"></i> 
+                        <span>Cash on delivery</span>
+                        <i class="bi bi-check-circle-fill checkmark"></i>
+                     </button>
+                 </div>
+                 <!-- div  credit images -->
+                 <div class="payment-imgs">
+                    <img src="images/visa.png" alt="" width="60px" height="40px">
+                    <img src="images/mastercard-logo.png" alt=""  width="60px" height="60px">
+                    <img src="images/pay.png" alt=""  width="70px" height="40px">
+                </div>
+
+                <!-- address f0rm -->
+                 <form action="" class="form-cart" id="address">
+                  <div class="cardholder">
+                      <label for="cardholder" class="label-default">Your City</label>
+                      <input id="mycity" list="cities" required="required" class="input-cart">
+                      <datalist id="cities">
+                          <option value="Alexandria">
+                          <option value="Aswan">
+                          <option value="Asyut">
+                          <option value="Beheira">
+                          <option value="Beni Suef">
+                          <option value="Cairo">
+                          <option value="Dakahlia">
+                          <option value="Damietta">
+                          <option value="Faiyum">
+                          <option value="Gharbia">
+                          <option value="Giza">
+                          <option value="Ismailia	">
+                          <option value="Kafr El Sheikh">
+                          <option value="Luxor">
+                          <option value="Matruh">
+                          <option value="Minya">
+                          <option value="Monufia">
+                          <option value="New Valley">
+                          <option value="North Sinai">
+                          <option value="Port Said">
+                          <option value="Qalyubia">
+                          <option value="Qena">
+                          <option value="Red Sea">
+                          <option value="Sharqia">
+                          <option value="Sohag">
+                          <option value="South Sinai">
+                          <option value="Suez">
+                      </datalist>
+                  </div>
+
+                  <div class="card-number">
+                     <label for="card-number" class="label-default">Your Full Address</label>
+                     <input type="text" name="card-address" id="card-address" class="input-cart">
+                 </div>
+
+                 <div class="input-flex">
+                     <div class="expire-date">
+                         <label for="Floor-Number" class="label-default">Floor Number</label>
+                         <div class="input-flex">
+                             <input type="number" name="floor" id="Floor-Number" class="input-cart">
+                         </div>
+                     </div>
+
+                     <div class="cvv">
+                       <label for="flat-number" class="label-default">Flat number</label>
+                       <input type="number" name="flat" id="flat-number" class="input-cart">
+                   </div>
+                 </div>
+              </form>
+                <!-- form credit card data -->
+                <form action="" class="form-cart" id="creditcard">
+                  <div class="cardholder">
+                      <label for="cardholder" class="label-default">Cardholder name</label>
+                      <input type="text" name="cardholder" id="cardholder" class="input-cart">
+                  </div>
+
+                  <div class="card-number">
+                     <label for="card-number" class="label-default">Card number</label>
+                     <input type="number" name="card-number" id="card-number" class="input-cart">
+                 </div>
+
+                 <div class="input-flex">
+                     <div class="expire-date">
+                         <label for="expire-date" class="label-default">Exparition date</label>
+                         <div class="input-flex">
+                             <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31" class="input-cart">
+                             / <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12" class="input-cart">
+                         </div>
+                     </div>
+
+                     <div class="cvv">
+                       <label for="cvv" class="label-default">CVV</label>
+                       <input type="number" name="cvv" id="cvv" class="input-cart">
+                   </div>
+                 </div>
+              </form>
+             </div>
+
+             <button class="btn-cart ">
+               <b>Pay</b> <span id="payAmount">0</span>
+             </button>
+            </div>
+      <!-- cart product section -->
+      <div class="cart">
+        <div class="cart-item-box" id="cart-pass">
+          <h2 class="section-heading">Order Summery</h2>
+
+          <!-- <div class="product-card" id="item1">
+            <div class="card-cart">
+              <div class="img-box">
+                <img src="images/black1.jpg" alt="product image" class="product-img" width="80px">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-n">Crochet Handbag</h4>
+              
+                <div class="wrapper">
+
+                <div class="product-qty">
+                  <button id="decrement">
+                    <i class="bi bi-dash"></i>
+                  </button>
+
+                  <span id="quantity">1</span>
+
+                  <button id="increment">
+                    <i class="bi bi-plus"></i>
+                  </button>
+                </div>
+
+                <div class="price">
+                  <span id="price">150</span> EGP
+                </div> 
+
+                
+              </div>
+              
+              </div>
+
+              <button id="product-colse-btn">
+                <i class="bi bi-x"></i>
+              </button> 
+            </div>
+
+          </div> -->
+
+          <!-- <div class="product-card">
+
+            <div class="card-cart">
+              <div class="img-box">
+                <img src="images/red2.jpg" alt="product image" class="product-img" width="80px">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-n">Crochet Handbag</h4>
+              
+                <div class="wrapper">
+                <div class="product-qty">
+                  <button id="decrement">
+                    <i class="bi bi-dash"></i>
+                  </button>
+
+                  <span id="quantity">1</span>
+
+                  <button id="increment">
+                    <i class="bi bi-plus"></i>
+                  </button>
+                </div>
+
+                <div class="price">
+                  <span id="price">100</span> EGP
+                </div>   
+              </div> 
+              </div>
+              <button id="product-colse-btn">
+                <i class="bi bi-x"></i>
+              </button> 
+            </div>
+          </div> -->
+          <!-- empty cart -->
+          <div class="text-empty"> <span>Your</span> <span>cart</span> <span>is</span>  <span>empty</span>
+          </div>
+          <img src="images/empty cart1.gif" alt="">
+        </div>
+        <!-- end empty cart -->
+        <div class="wrapper">
+          <div class="note">
+            <label for="note" class="label-default">Leave your note to seller ?
+            </label>
+            <div class="wrapper-flex">
+              <textarea name="note" id="customer-note" class="input-default" rows="3" style="width: 100%;"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="amount">
+          <div class="subtotal">
+            <span>Subtotal</span> <span><span id="subtotal">0</span> EGP</span>
+          </div>
+
+          <div class="tax">
+            <span>Tax</span> <span><span id="tax">0</span> EGP</span>
+          </div>
+
+          <div class="Shipping">
+            <span>Shipping</span> <span><span id="shipping">0</span> EGP</span>
+          </div>
+
+          <div class="Total">
+            <span>Total</span> <span><span id="total">0</span> EGP</span>
+          </div>
+          
+        </div>
+      </div>
+     </div>
+ </main>
+ <script src="cart.js"></script>
+ <script src="index.js"></script>
+
+<!--end content -->
+
+<footer>
+  <div class="fot">
+    <div class="info">
+      <h6>About</h6>
+      <p>We provide to you facilities to sell your product and display to you products to buy </p>
+      <div class="payment-imags">
+        <img src="images/visa.png" alt="">
+        <img src="images/mastercard-logo.png" alt="">
+        <img src="images/pay.png" alt="" width="70px" height="25px">
+    </div>
+    <div><i class="bi bi-lock-fill"></i>secure online payment</div>
+    </div>
+
+    <div class="cati">
+      <h6>Categories</h6>
+      <ul>
+       <li><i class="bi bi-arrow-right"></i> Accessories</li> 
+       <li><i class="bi bi-arrow-right"></i> Art</li> 
+       <li><i class="bi bi-arrow-right"></i> Crochet</li> 
+       <li><i class="bi bi-arrow-right"></i> Cooking</li>
+       <li><i class="bi bi-arrow-right"></i> Tailoring</li>
+       <li><i class="bi bi-arrow-right"></i> Wooden</li>
+      </ul>
+    </div>
+
+    <div class="links">
+      <h6>Quik links</h6>
+      <ul>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Features</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Products</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Shop</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Sell</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> New</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Contact</li></a>
+      </ul>
+    </div>
+
+    <div class="contac">
+      <h6>Contact</h6>
+      <div><i class="bi bi-geo-alt"></i> Address: Portsaid, Egypt</div>
+      <div><i class="bi bi-telephone"></i> Phone: 0663643663 </div>
+      <div><i class="bi bi-envelope"></i> Email: crafrs22@gmail.com</div>
+      <div><a href="#"><img src="images/app.png" alt="" width="100px"></a></div>
+    </div>
+  </div>
+  <div class="rights"><i class="far fa-copyright"></i> <span>2021 -</span>  <span>All</span> <span>rights</span> <span>reserved</span> <span>to</span> <span>Crafts</span></div>
+</footer>
+<!--end footer-->
+<div id="go-top"><i class="fas fa-arrow-up"></i></div>
+<script src="jqueryLib.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

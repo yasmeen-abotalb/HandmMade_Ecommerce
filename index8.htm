@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRAFTS</title>
+  <link rel="icon" href="images/imageedit_34_6571707878.jpg" />
+  <!-- css and js bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!--normalize file-->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!--css main file-->
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- font awsome library for icons-->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!--font awsowm-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@200;300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet" />
+  <!-- link css -->
+</head>
+<body>
+  <!-- Start Header -->
+  <nav>
+    <ul class="menu">
+      <a href="index.html" class="logo">
+        <img src="images/imageedit_34_6571707878.jpg"/>
+      </a>
+        <li class="item"><a class = "nav-item" href="index.html">Home</a></li>
+        <li class="item"><a class = "nav-item" href="index8.htm">Products</a></li>
+        <li class="item"><a class = "nav-item" href="">Contact</a></li>
+        <!-- <li class="item main"><a id="main-ico" href="#index2.html">Log In</a></li> -->
+        <li class="toggle"><span class="bars"></span></li>
+        <li class="item main"><a id="main-ico" href="index4.html"
+          ><span>log out</span></a></li>
+       <li class="item main"><a id="main-ico" href="index4.html"
+        ><span id="profName">yasmeen</span><img id="profileImg" src="images/yasmeen.jpg" alt="" class="nav__user-img"
+      /></a></li>
+      <li class="item"><a href="index7.htm"><i id="ico" class="bi bi-cart3"></i><span class="counter">0</span></a></li>
+    </ul>
+</nav>
+<!-- end header -->
+
+<!--start content -->
+<div class="container">
+    <h2 class="special-heading">Products</h2>
+    <p>All products are handmade</p>
+
+    <div class="search-bar">
+        <button><i class="bi bi-search"></i></button>
+        <input type="search" id="search-bar" class="search" placeholder="Search">
+    </div>
+    <div class="filters" id="filter">
+        <ul>
+            <li class="list activeted" data-filter="all">All</li>
+            <li class="list" data-filter="accessories">Accessories</li>
+            <li class="list" data-filter="art">Art</li>
+            <li class="list" data-filter="crochet">Crochet</li>
+            <li class="list" data-filter="cooking">Cooking</li>
+            <li class="list" data-filter="tailoring">Tailoring</li>
+            <li class="list" data-filter="wooden">Wooden</li>
+            <li class="list" data-filter="other">Other</li>
+        </ul>
+    </div>
+</div>
+       <div class="products">
+         <!-- first product -->
+         <div class="pro-card" data-item="crochet">
+           <img src="images/black1.jpg" alt="">
+           <h5 class="product-title">Crochet bag</h5>
+           <div class="details">
+             <span>150 EGP</span>
+            <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+           </div>
+           <a class="detail" href="index6.htm">Details</a>
+        </div>
+        <!-- second product -->
+         <div class="pro-card" data-item="accessories">
+           <img src="images/accessories1.jpg" alt="">
+           <h5>Blue necklace</h5>
+           <div class="details">
+             <span>60 EGP</span>
+             <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+          </div>
+          
+         <div class="pro-card" data-item="art">
+           <img src="images/art1.jpg" alt="">
+           <h5>Dream catcher</h5>
+           <div class="details">
+             <span>80 EGP</span>
+             <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+          </div>
+         <div class="pro-card" data-item="art">
+           <img src="images/candle1.jpeg" alt="">
+           <h5>candle</h5>
+           <div class="details">
+             <span>50 EGP</span>
+             <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+          </div>
+         <div class="pro-card" data-item="cooking">
+           <img src="images/cook1.jpg" alt="">
+           <h5>pasta</h5>
+           <div class="details">
+             <span>45 EGP</span>
+             <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+          </div>
+         <div class="pro-card" data-item="accessories">
+           <img src="images/accessories2.jpeg" alt="">
+           <h5>Sebha</h5>
+           <div class="details">
+             <span>70 EGP</span>
+             <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+          </div>
+         <div class="pro-card" data-item="wooden">
+           <img src="images/lambs1.jpg" alt="">
+           <h5>Lamp</h5>
+           <div class="details">
+             <span>170 EGP</span>
+             <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+          </div>
+         <div class="pro-card" data-item="tailoring">
+           <img src="images/tailor1.jpg" alt="">
+           <h5>Shirt</h5>
+           <div class="details">
+             <span>75 EGP</span>
+             <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+          </div>
+          <div class="pro-card" data-item="cooking">
+            <img src="images/cook2.jpg" alt="">
+            <h5>soap</h5>
+            <div class="details">
+              <span>80 EGP</span>
+              <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+           </div>
+          <div class="pro-card" data-item="crochet">
+            <img src="images/red2.jpg" alt="">
+            <h5>Crochet bag</h5>
+            <div class="details">
+              <span>100 EGP</span>
+              <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+            </div>
+            <a class="detail" href="index6.htm">Details</a>
+           </div>
+           <div class="pro-card" data-item="art">
+            <img src="images/tara.jpg" alt="">
+            <h5>Tara</h5>
+            <div class="details">
+              <span>200 EGP</span>
+              <a class="btn-add" href="#"><i class="bi bi-cart3"></i></a>
+           </div>
+           <a class="detail" href="index6.htm">Details</a>
+           </div>
+       </div>
+
+
+<!--end content -->
+<script src="index.js"></script>
+<footer>
+  <div class="fot">
+    <div class="info">
+      <h6>About</h6>
+      <p>We provide to you facilities to sell your product and display to you products to buy </p>
+      <div class="payment-imags">
+        <img src="images/visa.png" alt="">
+        <img src="images/mastercard-logo.png" alt="">
+        <img src="images/pay.png" alt="" width="70px" height="25px">
+    </div>
+    <div><i class="bi bi-lock-fill"></i>secure online payment</div>
+    </div>
+
+    <div class="cati">
+      <h6>Categories</h6>
+      <ul>
+       <li><i class="bi bi-arrow-right"></i> Accessories</li> 
+       <li><i class="bi bi-arrow-right"></i> Art</li> 
+       <li><i class="bi bi-arrow-right"></i> Crochet</li> 
+       <li><i class="bi bi-arrow-right"></i> Cooking</li>
+       <li><i class="bi bi-arrow-right"></i> Tailoring</li>
+       <li><i class="bi bi-arrow-right"></i> Wooden</li>
+      </ul>
+    </div>
+
+    <div class="links">
+      <h6>Quik links</h6>
+      <ul>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Features</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Products</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Shop</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Sell</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> New</li></a>
+        <a href=""><li><i class="bi bi-arrow-right"></i> Contact</li></a>
+      </ul>
+    </div>
+
+    <div class="contac">
+      <h6>Contact</h6>
+      <div><i class="bi bi-geo-alt"></i> Address: Portsaid, Egypt</div>
+      <div><i class="bi bi-telephone"></i> Phone: 0663643663 </div>
+      <div><i class="bi bi-envelope"></i> Email: crafrs22@gmail.com</div>
+      <div><a href="#"><img src="images/app.png" alt="" width="100px"></a></div>
+    </div>
+  </div>
+  <div class="rights"><i class="far fa-copyright"></i> <span>2021 -</span>  <span>All</span> <span>rights</span> <span>reserved</span> <span>to</span> <span>Crafts</span></div>
+</footer>
+<!--end footer-->
+<div id="go-top"><i class="fas fa-arrow-up"></i></div>
+<script src="jqueryLib.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRAFTS</title>
+  <link rel="icon" href="images/imageedit_34_6571707878.jpg" />
+  <!-- css and js bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <!--normalize file-->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!--css main file-->
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- font awsome library for icons-->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!--font awsowm-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@200;300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet" />
+  <style>
+    /* html {
+      font-size: 75%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    footer {
+      font-size: 17px;
+    } */
+  </style>
+      <script src="index.js"></script>
+</head>
+<body>
+  <!-- Start Header -->
+  <nav>
+    <ul class="menu">
+      <a href="index.html" class="logo">
+        <img src="images/imageedit_34_6571707878.jpg"/>
+      </a>
+        <li class="item"><a class = "nav-item" href="index.html">Home</a></li>
+        <li class="item"><a class = "nav-item" href="index8.htm">Products</a></li>
+        <li class="item"><a class = "nav-item" href="">Contact</a></li>
+        <!-- <li class="item main"><a id="main-ico" href="#index2.html">Log In</a></li> -->
+        <li class="toggle"><span class="bars"></span></li>
+        <li class="item main"><a id="main-ico" href="index4.html"
+          ><span>log out</span></a></li>
+       <li class="item main"><a id="main-ico" href="index4.html"
+        ><span id="profName">yasmeen</span><img id="profileImg" src="images/yasmeen.jpg" alt="" class="nav__user-img"
+      /></a></li>
+      <li class="item"><a href="index7.htm"><i id="ico" class="bi bi-cart3"></i><span class="counter">0</span></a></li>
+
+    </ul>
+</nav>
+<!-- end header -->
+  <!-- container profile -->
+  <div class="add-ad">
+    <div class="container5">
+      <div class="forms-container">
+        <div class="advertisement">
+
+          <form class="ad_form">
+            <div class="form_ad">
+              <label class="ad_label" for="ad_title">Advertisement title</label>
+              <input class="ad_input" id="ad_title" type="text" placeholder="title" required="required" minlength="4" />
+            </div>
+            <div class="form_ad">
+              <label class="ad_label" for="price">Price</label>
+              <input class="ad_input" id="price" type="number" placeholder="Price in EGP" required="required"
+                minlength="4" />
+            </div>
+            <div class="form_ad">
+              <label class="ad_label" for="Catigories">Main category</label>
+              <input class="ad_input" id="Catigries" placeholder="Catigory" list="Catigory" required="required">
+              <datalist id="Catigory">
+                <option value="Accessories">
+                <option value="Art">
+                <option value="Crochet">
+                <option value="Cooking">
+                <option value="Tailoring">
+                <option value="Wooden crafts">
+                <option value="Other">
+              </datalist>
+            </div>
+
+            <div class="form_ad">
+              <label class="ad_label" for="quantity">Quantity</label>
+              <input class="ad_input" id="quantity" type="number" placeholder="Quantity of product" required="required"
+                minlength="4" />
+            </div>
+
+            <div class="form_ad">
+              <label class="ad_label" for="country">Your country</label>
+              <input class="ad_input" id="country" placeholder="country" list="city" required="required">
+              <datalist id="city">
+                <option value="Alexandria">
+                <option value="Aswan">
+                <option value="Asyut">
+                <option value="Beheira">
+                <option value="Beni Suef">
+                <option value="Cairo">
+                <option value="Dakahlia">
+                <option value="Damietta">
+                <option value="Faiyum">
+                <option value="Gharbia">
+                <option value="Giza">
+                <option value="Ismailia	">
+                <option value="Kafr El Sheikh">
+                <option value="Luxor">
+                <option value="Matruh">
+                <option value="Minya">
+                <option value="Monufia">
+                <option value="New Valley">
+                <option value="North Sinai">
+                <option value="Port Said">
+                <option value="Qalyubia">
+                <option value="Qena">
+                <option value="Red Sea">
+                <option value="Sharqia">
+                <option value="Sohag">
+                <option value="South Sinai">
+                <option value="Suez">
+              </datalist>
+            </div>
+
+            <div class="form_ad">
+              <label class="ad_label" for="descripe">Description</label>
+              <textarea id="descripe" class="ad_input" placeholder="Add Your Description"
+                style="height: 80px; resize: none; overflow-y: hidden;" minlength="20"></textarea>
+            </div>
+
+            <div class="form_ad">
+              <label class="ad_label" for="photos">Photos</label>
+              <div class="pics">
+                <div><a class="add_pic" href=""><i class="bi bi-plus-circle-fill"></i></a></div>
+                <div><a class="add_pic" href=""><i class="bi bi-plus-circle-fill"></i></a></div>
+                <div><a class="add_pic" href=""><i class="bi bi-plus-circle-fill"></i></a></div>
+                <div><a class="add_pic" href=""><i class="bi bi-plus-circle-fill"></i></a></div>
+               <!-- <div> -->
+                 <!-- <label for="firstImg">
+                 <i class="bi bi-plus-circle-fill" style="cursor: pointer;"></i>
+              </label> </div>
+                <input type="file" name="" id="firstImg" style="display: none; visibility: none;" onchange="getImage(this.value);">
+                <div id="display-image"></div> -->
+            
+                <!-- <script>
+    function getImage(imagename){
+      var newimg = imagename.replace(/^.*\\/,"");
+      $('#display-image').html(newimg);
+    }
+  </script> -->
+              
+              <!-- </div> -->
+            </div>
+            <div class="form__group right">
+              <button class="btn">Post</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h2 class="ad-head">Add Your Advertisement</h2>
+          </div>
+          <img src="images/undraw_post_re_mtr4.svg" class="image" alt="password" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end container profile -->
+  <footer>
+    <div class="fot">
+      <div class="info">
+        <h6>About</h6>
+        <p>We provide to you facilities to sell your product and display to you products to buy </p>
+        <div class="payment-imags">
+          <img src="images/visa.png" alt="">
+          <img src="images/mastercard-logo.png" alt="">
+          <img src="images/pay.png" alt="" width="70px" height="25px">
+      </div>
+      <div><i class="bi bi-lock-fill"></i>secure online payment</div>
+      </div>
+
+      <div class="cati">
+        <h6>Categories</h6>
+        <ul>
+         <li><i class="bi bi-arrow-right"></i> Accessories</li> 
+         <li><i class="bi bi-arrow-right"></i> Art</li> 
+         <li><i class="bi bi-arrow-right"></i> Crochet</li> 
+         <li><i class="bi bi-arrow-right"></i> Cooking</li>
+         <li><i class="bi bi-arrow-right"></i> Tailoring</li>
+         <li><i class="bi bi-arrow-right"></i> Wooden</li>
+        </ul>
+      </div>
+
+      <div class="links">
+        <h6>Quik links</h6>
+        <ul>
+          <a href=""><li><i class="bi bi-arrow-right"></i> Features</li></a>
+          <a href=""><li><i class="bi bi-arrow-right"></i> Products</li></a>
+          <a href=""><li><i class="bi bi-arrow-right"></i> Shop</li></a>
+          <a href=""><li><i class="bi bi-arrow-right"></i> Sell</li></a>
+          <a href=""><li><i class="bi bi-arrow-right"></i> New</li></a>
+          <a href=""><li><i class="bi bi-arrow-right"></i> Contact</li></a>
+        </ul>
+      </div>
+
+      <div class="contac">
+        <h6>Contact</h6>
+        <div><i class="bi bi-geo-alt"></i> Address: Portsaid, Egypt</div>
+        <div><i class="bi bi-telephone"></i> Phone: 0663643663 </div>
+        <div><i class="bi bi-envelope"></i> Email: crafrs22@gmail.com</div>
+        <div><a href="#"><img src="images/app.png" alt="" width="100px"></a></div>
+      </div>
+    </div>
+    <div class="rights"><i class="far fa-copyright"></i> <span>2021 -</span>  <span>All</span> <span>rights</span> <span>reserved</span> <span>to</span> <span>Crafts</span></div>
+  </footer>
+  <!--end footer-->
+  <div id="go-top"><i class="fas fa-arrow-up"></i></div>
+  <script src="jqueryLib.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
