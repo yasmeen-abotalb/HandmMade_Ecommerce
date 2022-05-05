@@ -2759,7 +2759,7 @@ margin-bottom: 25px;
   display: flex;
   justify-content: space-evenly;
   padding: 0 30px;
-}
+}    
 .btn-user{
   width: 76px;
   height: 32px;
@@ -2821,7 +2821,49 @@ outline: none;
 }
 
 /* end profile manage user */
-
+/* start profile reviews */
+.review-user{
+  width: 100%;
+  box-shadow: 0px 5px 5px rgb(187, 181, 181);
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+.review-info{
+  display: flex;
+  align-items: center;
+}
+p.my-review{
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 1px;
+  padding-left: 60px;
+  margin-bottom: -5px;
+}
+.review-info .pro-pic{
+  margin-right: 13px;
+}
+.review-manage{
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+.pro-pic img{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.review-info .user-name{
+  font-size: 19px;
+}
+@media (max-width:550px) {
+  p.my-review{
+    padding-left: 20px;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}
+/* end profile reviews */
 /*start footer*/
 footer {
   background-color: var(--text-color);
