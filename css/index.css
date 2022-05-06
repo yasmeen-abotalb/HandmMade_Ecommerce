@@ -2821,6 +2821,63 @@ outline: none;
 }
 
 /* end profile manage user */
+
+/* start profile my products */
+.price-button{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: -5px;
+}
+.update-myorder{
+  margin-left: 120px;
+}
+.price-button button{
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 55px;
+  margin: 8px 8px 10px 0;
+  transition: 0.5s;
+  outline: none;
+  background-color: white;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  padding: 5px 8px;
+}
+.price-button button:hover{
+  background-color: var(--text-color);
+  color: white;
+}
+/* end profile my products */
+/* start profile m anage products */
+
+/* end profile m anage products */
+
+/* start profile my  orders */
+.container-orders{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.profile-order{
+  box-shadow: 2px 3px 3px rgb(187, 181, 181);
+  width: 220px;
+  margin: 0 auto 5px auto;
+}
+.profile-order img {
+  width: 220px;
+  height: 220px;
+}
+.profile-order .details-order{
+  padding: 5px 10px;
+}
+.profile-order .details-order span{
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+/* end profile my  orders */
+
 /* start profile reviews */
 .review-user{
   width: 100%;
@@ -2864,6 +2921,7 @@ p.my-review{
   }
 }
 /* end profile reviews */
+
 /*start footer*/
 footer {
   background-color: var(--text-color);
