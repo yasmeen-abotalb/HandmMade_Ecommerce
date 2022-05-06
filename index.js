@@ -186,4 +186,9 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
+// pass pic and comment
+function myFunction1(){
+  document.getElementById("rev-text").innerHTML = document.getElementById("bodyText").value;
+  document.getElementById("avatar1").src = document.getElementById("profileImg").src;
+  document.getElementById("profileName").innerHTML = document.getElementById("profName").innerHTML;
+  }

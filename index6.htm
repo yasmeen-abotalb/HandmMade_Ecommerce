@@ -31,7 +31,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet" />
-   <script src="index.js"></script>
+      <!-- Link Swiper's CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
   <!-- Start Header -->
@@ -111,12 +112,12 @@ SmallImg[2].onclick = function(){
   </div>
 
   <!-- <div id="person-rev"></div> -->
-  <div class="rev">
+  <!-- <div class="rev">
   <figure class="review">
     <blockquote id="rev-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, ex iusto aspernatur possimus consequatur ut. Harum atque sint, molestiae fugiat, nostrum laudantium esse minus iste minima necessitatibus autem quasi at?
     </blockquote>
     <div class="arrow"></div>
-    <img id="avatar1" src="images/avatar.png" alt="sq-sample3" />
+    <img id="avatar1" src="images/avatar.png" alt="" />
     <div class="author">
       <h5 id="profileName">Customer 1 </h5>
     </div>
@@ -125,7 +126,7 @@ SmallImg[2].onclick = function(){
     <blockquote >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum debitis omnis, error, quas vel eligendi laboriosam eos, accusantium fugiat illum sint velit perferendis iste fugit autem nisi est distinctio?
     </blockquote>
     <div class="arrow"></div>
-    <img src="images/avatar.png" alt="sq-sample27" />
+    <img src="images/avatar.png" alt="" />
     <div class="author">
       <h5>Customer 2</h5>
     </div>
@@ -134,21 +135,85 @@ SmallImg[2].onclick = function(){
     <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus incidunt dolorem eligendi esse laborum maxime! Ullam, voluptatum doloribus a eos nesciunt delectus ducimus hic! Officia, ipsum eligendi. Consequatur, adipisci optio?
     </blockquote>
     <div class="arrow"></div>
-    <img src="images/avatar.png" alt="sq-sample17"/>
+    <img src="images/avatar.png" alt=""/>
     <div class="author">
       <h5>Customer 3</h5>
     </div>
   </figure>
   </div>
-</div>
+   -->
+   
+   <div class="slider-contain">
+    <div class="container-slide">
 
-<script>
- function myFunction1(){
-document.getElementById("rev-text").innerHTML = document.getElementById("bodyText").value;
-document.getElementById("avatar1").src = document.getElementById("profileImg").src;
-document.getElementById("profileName").innerHTML = document.getElementById("profName").innerHTML;
-}
-</script>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide review-slide ">
+            <div class="img-review">
+               <img id="avatar1" src="images/yasmeen.jpg" alt=""> 
+              <h5 class="user-name" id="profileName">Yasmeen Abotalb</h5>
+            </div>
+            <div class="arrow"></div>
+            <blockquote id="rev-text">Quo voluptatum debitis, error , quas vel eligendi laboriosam eos, accusantium fugiat illum sint velit perferendis iste fugit autem nisi est distinc?
+            </blockquote>
+        </div>
+
+        <div class="swiper-slide review-slide ">
+          <div class="img-review">
+            <img src="images/atef.jpg" alt=""> 
+            <h5 class="user-name">Youssef Atef</h5>
+          </div>
+          <div class="arrow"></div>
+          <blockquote >Quo voluptatum debitis, error , quas vel eligendi laboriosam eos, accusantium fugiat illum sint velit perferendis iste fugit autem nisi est distinc?
+          </blockquote>
+      </div>
+      <div class="swiper-slide review-slide ">
+        <div class="img-review">
+          <img src="images/avatar.png" alt=""> 
+          <h5 class="user-name">User1</h5>
+        </div>
+        <div class="arrow"></div>
+        <blockquote >Quo voluptatum debitis, error , quas vel eligendi laboriosam eos, accusantium fugiat illum sint velit perferendis iste fugit autem nisi est distinc?
+        </blockquote>
+    </div>
+    <div class="swiper-slide review-slide ">
+      <div class="img-review">
+        <img src="images/avatar.png" alt=""> 
+        <h5 class="user-name">User1</h5>
+      </div>
+      <div class="arrow"></div>
+      <blockquote >Quo voluptatum debitis, error , quas vel eligendi laboriosam eos, accusantium fugiat illum sint velit perferendis iste fugit autem nisi est distinc?
+      </blockquote>
+  </div>
+  <div class="swiper-slide review-slide ">
+    <div class="img-review">
+      <img src="images/avatar.png" alt=""> 
+      <h5 class="user-name">User1</h5>
+    </div>
+    <div class="arrow"></div>
+    <blockquote >Quo voluptatum debitis, error , quas vel eligendi laboriosam eos, accusantium fugiat illum sint velit perferendis iste fugit autem nisi est distinc?
+    </blockquote>
+</div>
+<div class="swiper-slide review-slide ">
+  <div class="img-review">
+    <img src="images/avatar.png" alt=""> 
+    <h5 class="user-name">User1</h5>
+  </div>
+  <div class="arrow"></div>
+  <blockquote >Quo voluptatum debitis, error , quas vel eligendi laboriosam eos, accusantium fugiat illum sint velit perferendis iste fugit autem nisi est distinc?
+  </blockquote>
+</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+  
+    </div>
+
+
 <!-- <script>
   function render(data){
     var html = "<div class='commentBox'><div class = 'leftPanelImg'><img src='https://placeholdit.imgix.net/~text?w=100&h=100'/></div><div class'rightPanel'><span>"+data.name+"</span><div class='date'>"+data.date+"</div> <p>"+data.comment+"</p></div> <div class ='clear'></div></div>";
@@ -172,7 +237,6 @@ document.getElementById("profileName").innerHTML = document.getElementById("prof
   });
   
 </script> -->
-
 <!-- reviews  -->
 
 <!--end content -->
@@ -228,6 +292,7 @@ document.getElementById("profileName").innerHTML = document.getElementById("prof
 <!--end footer-->
 <div id="go-top"><i class="fas fa-arrow-up"></i></div>
 <script src="jqueryLib.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
